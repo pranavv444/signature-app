@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .canvas{
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="top">
+        <div class="black">
+            <p>Text Colour Picker</p>
+            <input class="form-control" type="color" id="colorPicker"/>
+        </div>
+        <div class="black">
+            <p>Background</p>
+            <input class="form-control" type="color" id="canvasColor">
+        </div>
+        <div class="black">
+            <p>Font Size</p>
+            <select id="fontSize">
+                <option value="5">5 px</option>
+                <option value="10">10 px</option>
+                <option value="15">15 px</option>
+                <option value="20">20 px</option>
+                <option value="30">30 px</option>
+                <option value="40">40 px</option>
+
+            </select>
+        </div>
+
+    </div>
+    <canvas class="canvas" id="mycanvas" width="800" height="500"></canvas>
 </body>
 </html>
